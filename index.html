@@ -231,7 +231,7 @@
 <li><p>可以通过node -v 和 git version 查看版本信息 判断是否安装成功</p>
 </li>
 <li><p>git 安装成功之后，任意文件夹下右键会有git bash here选项</p>
-<p><img src="E:\blog\source_posts\blogbuild\1.png"></p>
+<p><img src="/2022/05/25/blogbuild/1.png"></p>
 </li>
 <li><p>git下载完成之后需要做以下配置：</p>
 <ul>
@@ -241,7 +241,7 @@
 </ul>
 </li>
 <li><p>配置完成之后，可以通过 git config –list 查看</p>
-<p><img src="E:\blog\source_posts\blogbuild\2.png" alt="image-20220519205221062"></p>
+<p><img src="/2022/05/25/blogbuild/2.png" alt="image-20220519205221062"></p>
 </li>
 </ul>
 <blockquote>
@@ -250,19 +250,19 @@
 <p>&amp;emsp;&amp;emsp; hexo 也是npm管理的一个package，可以直接通过npm 下载</p>
 <ul>
 <li><p>切换到准备好的文件夹下，右键git bash here 打开bash窗口，执行 npm i -g hexo-cli 下载hexo脚手架</p>
-<p><img src="E:\blog\source_posts\blogbuild\3.png" alt="image-20220519205551458"></p>
+<p><img src="/2022/05/25/blogbuild/3.png" alt="image-20220519205551458"></p>
 </li>
 <li><p>通过hexo-cli 脚手架初始化： hexo init</p>
-<img src="E:\blog\source\_posts\blogbuild\4.png" alt="image-20220519210407798" style="zoom:50%;" />
+<img src="/2022/05/25/blogbuild/4.png" alt="image-20220519210407798" style="zoom:50%;">
 </li>
 <li><p>npm install 或 npm i 下载依赖</p>
 </li>
 <li><p>下载hexo部署工具 npm i  hexo-deployer-git –save</p>
-<p><img src="E:\blog\source_posts\blogbuild\5.png" alt="image-20220519210546927"></p>
+<p><img src="/2022/05/25/blogbuild/5.png" alt="image-20220519210546927"></p>
 </li>
 <li><p>打开<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官网</a>  找到 左侧的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">命令</a> ,执行hexo g ,然后再执行 hexo server,到这一步本地可以查看博客页面了,注意按照bash窗口提示 ctrl+点击是不会带端口号的，加上端口号即可</p>
-<p><img src="E:\blog\source_posts\blogbuild\6.png" alt="image-20220519211547142"></p>
-<p><img src="E:\blog\source_posts\blogbuild\7.png" alt="image-20220519211939222"></p>
+<p><img src="/2022/05/25/blogbuild/6.png" alt="image-20220519211547142"></p>
+<p><img src="/2022/05/25/blogbuild/7.png" alt="image-20220519211939222"></p>
 </li>
 </ul>
 <blockquote>
@@ -270,7 +270,7 @@
 </blockquote>
 <ul>
 <li><p>打开<a target="_blank" rel="noopener" href="https://github.com/">github官网</a>，比较慢的情况下按下图配置会稍微好点，先注册登陆</p>
-<img src="E:\blog\source\_posts\blogbuild\8.png" alt="image-20220519212551031" style="zoom:50%;" /></li>
+<img src="/2022/05/25/blogbuild/8.png" alt="image-20220519212551031" style="zoom:50%;"></li>
 </ul>
 <p>点击头像选择 your repositories ,新建一个github账号同名的仓库 账号名.github.io作为仓库名称，后续简称博客仓库</p>
 <blockquote>
@@ -280,18 +280,18 @@
 <li><p>首先检查之前有没有设置过使用ssh登陆连接github，可以通过命令行 cd ~&#x2F;.ssh 查看是否有做过配置</p>
 </li>
 <li><p>如果没有创建新的ssh秘钥并添加到github</p>
-<p><img src="E:\blog\source_posts\blogbuild\9.png" alt="image-20220519214020931"></p>
-<p><img src="E:\blog\source_posts\blogbuild\10.png" alt="image-20220519214114913"></p>
+<p><img src="/2022/05/25/blogbuild/9.png" alt="image-20220519214020931"></p>
+<p><img src="/2022/05/25/blogbuild/10.png" alt="image-20220519214114913"></p>
 </li>
-<li><p>如图中指示，创建新的ssh秘钥：ssh-keygen -t rsa -b 4096 -C “<a href="mailto:&#x79;&#111;&#x75;&#x72;&#95;&#101;&#109;&#97;&#x69;&#108;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#x72;&#95;&#101;&#109;&#97;&#x69;&#108;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>“ 此处的邮箱是git 配置的  连续回车就好，如果之前生成过，rewrite：y 覆盖</p>
-<p><img src="E:\blog\source_posts\blogbuild\11.png" alt="image-20220519214747476"></p>
+<li><p>如图中指示，创建新的ssh秘钥：ssh-keygen -t rsa -b 4096 -C “<a href="mailto:&#x79;&#x6f;&#x75;&#114;&#x5f;&#101;&#x6d;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#x75;&#114;&#x5f;&#101;&#x6d;&#97;&#105;&#x6c;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;</a>“ 此处的邮箱是git 配置的  连续回车就好，如果之前生成过，rewrite：y 覆盖</p>
+<p><img src="/2022/05/25/blogbuild/11.png" alt="image-20220519214747476"></p>
 </li>
 <li><p>直接在这个窗口中选中右键复制的格式是不正确的。。执行脚本 clip &lt; ~&#x2F;.ssh&#x2F;id_rsa.pub </p>
 </li>
-<li><p><img src="E:\blog\source_posts\blogbuild\12.png" alt="image-20220519215503442"></p>
+<li><p><img src="/2022/05/25/blogbuild/12.png" alt="image-20220519215503442"></p>
 </li>
 <li><p>之前的页面测试</p>
-<p><img src="E:\blog\source_posts\blogbuild\13.png" alt="image-20220519215716438"></p>
+<p><img src="/2022/05/25/blogbuild/13.png" alt="image-20220519215716438"></p>
 </li>
 </ul>
 <blockquote>
@@ -301,11 +301,11 @@
 <li><p>克隆博客仓库到本地，可能需要再次配置 http.postBuffer</p>
 </li>
 <li><p>修改配置，后续页面个性化配置也需要改这个文件</p>
-<p><img src="E:\blog\source_posts\blogbuild\14.png" alt="image-20220519220342574"></p>
-<img src="E:\blog\source\_posts\blogbuild\15.png" alt="image-20220519222816040" style="zoom:50%;" />
+<p><img src="/2022/05/25/blogbuild/14.png" alt="image-20220519220342574"></p>
+<img src="/2022/05/25/blogbuild/15.png" alt="image-20220519222816040" style="zoom:50%;">
 </li>
 <li><p>部署 hexo g, 然后 hexo d  可以合并为 hexo g -d 或 hexo d -g  第一次会有邮箱密码验证</p>
-<p><img src="E:\blog\source_posts\blogbuild\16.png" alt="image-20220519221023204"></p>
+<p><img src="/2022/05/25/blogbuild/16.png" alt="image-20220519221023204"></p>
 </li>
 <li><p>访问用户用.github.io</p>
 </li>
@@ -473,7 +473,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;div&gt;&#123;&#123;$store.state&#125;&#125;&lt;/div&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.state.name&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.state.a.foo&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.state.b.foob&#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;App&#x27;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>浏览器输出：</p>
-<img src="E:\blog\source\_posts\vuex-modules\1.png" alt="image-20220524194839786" style="zoom: 80%;" />
+<img src="/2022/05/24/vuex-modules/1.png" alt="image-20220524194839786" style="zoom: 80%;">
 
 <p>可以看见mudules中定义的state都以module名称为key,挂到根级别的state当中了，所以访问的时候需要使用$store.state.a | b . xxx的形式，script当中亦是如此</p>
 <blockquote>
@@ -483,7 +483,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;div&gt;&#123;&#123;$store.getters&#125;&#125;&lt;/div&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.getters.numDouble&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.getters.numa&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;&#123;&#123;$store.getters.numb&#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>查看浏览器</p>
-<img src="E:\blog\source\_posts\vuex-modules\2.png" alt="image-20220524202750006" style="zoom:50%;" />
+<img src="/2022/05/24/vuex-modules/2.png" alt="image-20220524202750006" style="zoom:50%;">
 
 
 
@@ -496,14 +496,14 @@
 
 
 
-<img src="E:\blog\source\_posts\vuex-modules\3.png" alt="image-20220524203744130" style="zoom: 67%;" />
+<img src="/2022/05/24/vuex-modules/3.png" alt="image-20220524203744130" style="zoom: 67%;">
 
 <ol>
 <li>通过getters的第二个参数可以访问任意的getters,不区分module</li>
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 再次改造store</span></span><br><span class="line"><span class="comment">//a </span></span><br><span class="line"><span class="title function_">numa</span>(<span class="params">state,getters,rootState,rootGetters</span>)&#123;</span><br><span class="line">    		<span class="comment">// console.log(&#x27;a-getters&#x27;,getters)</span></span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;a-rootState&#x27;</span>,rootState)</span><br><span class="line">            <span class="keyword">return</span> state.<span class="property">num</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">// b </span></span><br><span class="line"> <span class="title function_">numb</span>(<span class="params">state,getters,rootState,rootGetters</span>)&#123;</span><br><span class="line">     		<span class="comment">// console.log(&#x27;b-getters&#x27;, getters)</span></span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;b-rootSate&#x27;</span>, rootState)</span><br><span class="line">            <span class="keyword">return</span> state.<span class="property">num</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">// root</span></span><br><span class="line"> <span class="title function_">numDouble</span>(<span class="params">state,getters,rootState,rootGetters</span>)&#123;</span><br><span class="line">     		<span class="comment">// console.log(&#x27;root-getters&#x27;, getters)</span></span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;root-rootSate&#x27;</span>, rootState)</span><br><span class="line">            <span class="keyword">return</span> state.<span class="property">age</span></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
-<img src="E:\blog\source\_posts\vuex-modules\4.png" alt="image-20220524204625620" style="zoom:67%;" />
+<img src="/2022/05/24/vuex-modules/4.png" alt="image-20220524204625620" style="zoom:67%;">
 
 <ol>
 <li>在getters中可以通过第三个参数访问不同module中所有的state数据</li>
@@ -514,7 +514,7 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//改造 SFC</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">    &lt;button @click=&quot;doclick&quot;&gt;dinw&lt;/button&gt;</span><br><span class="line">    &lt;button @click=&quot;doclicka&quot;&gt;dinwa&lt;/button&gt;</span><br><span class="line">    &lt;button @click=&quot;doclickb&quot;&gt;dinwb&lt;/button&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;App&#x27;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    doclick()&#123;</span><br><span class="line">      this.$store.dispatch(&#x27;increment&#x27;)</span><br><span class="line">    &#125;,</span><br><span class="line">    doclicka()&#123;</span><br><span class="line">      this.$store.dispatch(&#x27;incrementa&#x27;)</span><br><span class="line">    &#125;,</span><br><span class="line">    doclickb()&#123;</span><br><span class="line">      this.$store.dispatch(&#x27;incrementb&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<img src="E:\blog\source\_posts\vuex-modules\5.png" alt="image-20220524205747792" style="zoom:50%;" />
+<img src="/2022/05/24/vuex-modules/5.png" alt="image-20220524205747792" style="zoom:50%;">
 
 <p>可以看到：</p>
 <ol>
@@ -528,12 +528,12 @@
 <p>上述所有例子都是基于module的namespaced:false 当a设置了namespaced:true时，state和actions和mutation的访问就发生了变化</p>
 <ol>
 <li><p>module的getters的第二个参数只能访问到当前module的getters</p>
-<img src="E:\blog\source\_posts\vuex-modules\6.png" alt="image-20220524214236670" style="zoom: 67%;" />
+<img src="/2022/05/24/vuex-modules/6.png" alt="image-20220524214236670" style="zoom: 67%;">
 </li>
 <li><p>像之前的方式去触发a(namespaced)中的actions和mutations就会报错</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 改造 SFC</span><br><span class="line">&lt;button @click=&quot;doclickDispatch&quot;&gt;dinwa-dispatch&lt;/button&gt;</span><br><span class="line">    &lt;button @click=&quot;doclickCommit&quot;&gt;dinwa-commit&lt;/button&gt;</span><br><span class="line">methods: &#123;</span><br><span class="line">	doclickDispatch()&#123;</span><br><span class="line">      this.$store.dispatch(&#x27;incrementa&#x27;)</span><br><span class="line">    &#125;,</span><br><span class="line">    doclickCommit()&#123;</span><br><span class="line">      this.$store.commit(&#x27;adda&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="E:\blog\source_posts\vuex-modules\7.png" alt="image-20220524214934666"></p>
+<p><img src="/2022/05/24/vuex-modules/7.png" alt="image-20220524214934666"></p>
 </li>
 <li><p>必须按照下面的格式在SFC中或根级别store访问</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">    doclickDispatch()&#123;</span><br><span class="line">    	this.$store.dispatch(&#x27;a/incrementa&#x27;)</span><br><span class="line">    &#125;,</span><br><span class="line">    doclickCommit()&#123;</span><br><span class="line">    	this.$store.commit(&#x27;a/adda&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -541,12 +541,12 @@
 <li><p>从namespaced的module访问根级别的actions或mutations需要在第三个参数的位置写上{root: true}</p>
 </li>
 <li><p>从namespaced的b访问namespaced的a的actions或mutations，参照4的基础上</p>
-<p><img src="E:\blog\source_posts\vuex-modules\8.png" alt="image-20220524221013505"></p>
+<p><img src="/2022/05/24/vuex-modules/8.png" alt="image-20220524221013505"></p>
 </li>
 <li><p>第5种情形也可以在b中</p>
 <p>context.dispatch(‘incrementa’, null, {root: true})</p>
 <p>不过需要修改incrementa的注册：</p>
-<p><img src="E:\blog\source_posts\vuex-modules\9.png" alt="image-20220524221725117"></p>
+<p><img src="/2022/05/24/vuex-modules/9.png" alt="image-20220524221725117"></p>
 </li>
 </ol>
 
